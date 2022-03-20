@@ -67,7 +67,14 @@ function randomCharacters(characterString) {
 }
 
 function constructPassword (characterString) {
-  
+  var passwordLength = passLength();
+  var password = ' ';
+
+  for (var i =0; i < passwordLength; i++) {
+    var generatedCharacters = randomCharacters(characterString);
+    password = generatedCharacters
+  }
+  return password;
 }
 
 //CALL FUNCTION
