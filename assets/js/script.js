@@ -1,5 +1,5 @@
-//WHEN prompted for the length of the password
-//THEN I choose a length of at least 8 characters and no more than 128 characters
+//Function to choose a length of at least 8 characters and no more than 128 characters
+
 function passLength() {
   var passwordLength = window.prompt('How many characters are in your password?');
 
@@ -42,12 +42,13 @@ function characteristicType() {
 
   return characters;
 }
-
+//Function to create random characters
 function randomCharacters(characterString) {
   var randomCharacters = characterString[Math.floor(Math.random() * characterString.length)]
   return randomCharacters;
 }
 
+//Main function that creates the string of the random characters
 function constructPassword(characterString) {
   var passwordLength = passLength();
   var password = ' ';
@@ -59,6 +60,7 @@ function constructPassword(characterString) {
   return password;
 }
 
+//Main function that generates and writes the password from the given information 
 function writePassword() {
   var characterString = characteristicType();
   var password = constructPassword(characterString);
