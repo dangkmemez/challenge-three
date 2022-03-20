@@ -61,8 +61,21 @@ function characteristicType() {
   return characters;
 }
 
+function randomCharacters(characterString) {
+  var randomCharacters = characterString[Math.floor(Math.random() * characterString.length)]
+  return randomCharacters;
+}
+
+function constructPassword (characterString) {
+  
+}
+
 //CALL FUNCTION
+
 passLength();
+characteristicType();
+randomCharacters();
+
 // Write password to the #password input
 //this is the main function- it will generate final password
 //function writePassword() {
